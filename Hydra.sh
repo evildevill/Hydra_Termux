@@ -16,7 +16,7 @@ orange='\e[38;5;166m'
 #Checking internet connection
 
 clear
-wget -q --spider https://hackerwasii.blogspot.com
+wget -q --spider https://hackerwasii.com
 if [ "$?" -eq 0 ]; then
         echo -e $okegreen [✔]::[Internet Connection]: CONNECTED!
         sleep 1
@@ -41,16 +41,15 @@ echo ""
 echo -e $yellow"               ▀█▀ █▀▀ █▀█ █▀▄▀█ █░█ ▀▄▀    "
 echo -e $BlueF "              ░█░ ██▄ █▀▄ █░▀░█ █▄█ █░█    "
 echo ""
-echo -e $lightgreen "                  ᐯ乇尺丂丨ㄖ几 1.0    "
-echo -e $green "         卂ㄩㄒ卄ㄖ尺 : 山卂丂乇乇爪 卂Ҝ尺卂爪"
-echo -e $cyan "               Wんﾑｲ丂ﾑｱｱ : +923137119351"
+echo -e $lightgreen "                  Version 1.0     "
+echo -e $green "                 Author: Waseem Akram"
+echo -e $cyan "               WhatsApp : +923137119351"
 echo ""
 echo ""
 sleep 2.0
-echo -e $yellow " 𝕴𝖓𝖘𝖙𝖆𝖑𝖑𝖎𝖓𝖌 𝕯𝖊𝖕𝖊𝖓𝖉𝖊𝖓𝖈𝖎𝖊𝖘......."
+echo -e $yellow " Installing Dependencies......."
 sleep 2.0
-echo -e $cyan " 𝕻𝖑𝖊𝖆𝖘𝖊 𝖜𝖆𝖎𝖙 𝖎𝖙 𝖜𝖎𝖑𝖑 𝖙𝖆𝖐𝖊 𝖘𝖔𝖒𝖊 𝖙𝖎𝖒𝖊..."
-echo -e $red " 𝖉𝖊𝖕𝖊𝖓𝖉𝖘 𝖔𝖓 𝖞𝖔𝖚𝖗 𝖎𝖓𝖙𝖊𝖗𝖓𝖊𝖙 𝖈𝖔𝖓𝖓𝖊𝖈𝖙𝖎𝖔𝖓.."
+echo -e $cyan " Please wait it will take some time..."
 echo ""
 apt upgrade -y >/dev/null 2>&1
 apt update -y >/dev/null 2>&1
@@ -59,7 +58,7 @@ pkg install cmake -y >/dev/null 2>&1
 dir=thc-hydra
 if [ -d "$dir" ]; then
         cd thc-hydra >/dev/null 2>&1
-        echo -e $cyan " ℌ𝔶𝔡𝔯𝔞 ℭ𝔬𝔪𝔭𝔦𝔩𝔦𝔫𝔤 𝔖𝔱𝔞𝔯𝔱...             "
+        echo -e $cyan " Hydra compiling start...             "
         chmod +x * >/dev/null 2>&1
         ./configure >/dev/null 2>&1
         make >/dev/null 2>&1
@@ -68,9 +67,9 @@ if [ -d "$dir" ]; then
         echo -e $red " 𝐻𝓎𝒹𝓇𝒶 𝒞𝑜𝓂𝓅𝒾𝓁𝑒𝒹 𝒮𝓊𝒸𝒸𝑒𝓈𝓈𝒻𝓊𝓁𝓁𝓎....      "
         sleep 2.0
         echo ""
-        echo -e $lightgreen " 刀のW 尺ひ刀 $red Hydra $lightgreen ｲの 丂ｲﾑ尺ｲ んﾘり尺ﾑ  "
+        echo -e $lightgreen " Now Run $red Hydra $lightgreen to start Hydra  "
 else
-        echo -e $cyan " 𝕴𝖓𝖘𝖙𝖆𝖑𝖑𝖎𝖓𝖌 𝖈𝖔𝖗𝖊 𝖋𝖎𝖑𝖊𝖘...."
+        echo -e $cyan " Installing core files...."
         rm -rf thc-hydra >/dev/null 2>&1
         git clone https://github.com/vanhauser-thc/thc-hydra >/dev/null 2>&1
         cd thc-hydra >/dev/null 2>&1
@@ -83,5 +82,5 @@ else
         echo -e $red " 𝐻𝓎𝒹𝓇𝒶 𝒞𝑜𝓂𝓅𝒾𝓁𝑒𝒹 𝒮𝓊𝒸𝒸𝑒𝓈𝓈𝒻𝓊𝓁𝓁𝓎....      "
         sleep 2.0
         echo ""
-        echo -e $lightgreen " 刀のW 尺ひ刀 $red Hydra $lightgreen ｲの 丂ｲﾑ尺ｲ んﾘり尺ﾑ  "
+        echo -e $lightgreen " Now Run $red Hydra $lightgreen to start Hydra  "
 fi
